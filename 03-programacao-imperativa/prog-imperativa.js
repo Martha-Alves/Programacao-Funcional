@@ -41,3 +41,5 @@ const Window = function(tabs) {
     .join(videoWindow.tabClose(2)) // Fechar a terceira aba na janela de vídeo e entrar
     .join(workWindow.tabClose(1).tabOpen());
   console.log(finalTabs.tabs);
+
+  //Caso você ainda não tenha descoberto, o problema do desafio anterior é com a chamada a splice na função tabClose(). Infelizmente, splice modifica o array original no qual opera e, por isso, a segunda chamada usou o array alterado, nos dando resultados inesperados. Este é apenas um pequeno exemplo - você chama uma função e passa uma variável, array ou objeto a ela; a função modifica a variável ou alguma coisa no objeto.
