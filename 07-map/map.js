@@ -114,7 +114,7 @@ const watchList = [
   
   // Altere apenas o código abaixo desta linha
   
-  const ratings = watchList.map(item => ({
+  const ratings = watchList.map(item => ({ //parentese necessário para retornar um objeto!
     title: item["Title"],
     rating: item["imdbRating"]
   }));
