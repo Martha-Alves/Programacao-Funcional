@@ -5,4 +5,4 @@ function checkPositive(arr) {
     // Altere apenas o código acima desta linha
   }
   
-  checkPositive([1, 2, 3, -4, 5]);
+ console.log( checkPositive([1, 2, 3, -4, 5]));
